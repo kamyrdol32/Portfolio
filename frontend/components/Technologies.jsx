@@ -1,6 +1,17 @@
 import React from "react";
-import {DiReact, DiPython} from "react-icons/di";
-import {SiFlask, SiMysql, SiGit, SiLinux, SiDocker, SiNginx, SiDjango} from "react-icons/si";
+import {
+    SiFlask,
+    SiMysql,
+    SiGit,
+    SiLinux,
+    SiDocker,
+    SiNginx,
+    SiDjango,
+    SiTailwindcss,
+    SiJavascript,
+    SiReact,
+    SiPython
+} from "react-icons/si";
 
 
 export default function Technologies() {
@@ -8,59 +19,71 @@ export default function Technologies() {
     const technologies = [
         {
             name: "Python",
-            icon: <DiPython size={50}/>,
+            icon: <SiPython size={50}/>,
             stars: 4,
-            description: "Język programowania wysokiego poziomu ogólnego przeznaczenia, o rozbudowanym pakiecie bibliotek standardowych, którego ideą przewodnią jest czytelność i klarowność kodu źródłowego. Jego składnia cechuje się czytelnością, przejrzystością i zwięzłością.",
+            description: "Python is a popular high-level programming language known for its simple and readable syntax. It is widely used in web development, data analysis, and scientific computing due to its extensive libraries and ease of use, making it a popular choice among beginner and experienced programmers alike.",
         },
         {
             name: "Flask",
             icon: <SiFlask size={50}/>,
-            stars: 3,
-            description: "Mikro framework aplikacji webowych napisany w języku Python. Jest sklasyfikowany jako micro-framework, ponieważ nie wymaga określonych narzędzi ani bibliotek. Jest to jeden z popularniejszych framework'ow wykorzystywanych do tworzenia stron internetowych.",
+            stars: 4,
+            description: "Flask is a simple and flexible Python web application framework, perfect for small to medium-sized web applications. Its lightweight nature, minimal setup requirements, and extensive documentation make it a popular choice for developers.",
         },
         {
             name: "Django",
             icon: <SiDjango size={50}/>,
             stars: 1,
-            description: "Wolny i otwarty framework przeznaczony do tworzenia aplikacji internetowych, napisany w Pythonie. Powstał pod koniec 2003 roku jako ewolucyjne rozwinięcie aplikacji internetowych, tworzonych przez grupę programistów związanych z Lawrence Journal-World.",
+            description: "Django is a high-level, full-stack Python web framework used for building large-scale web applications. It provides a robust set of features and tools for developers, including an ORM, template engine, and admin interface. Django's popularity and vast ecosystem make it a go-to choice for many web developers.",
         },
         {
             name: "SQL / MySQL",
             icon: <SiMysql size={50}/>,
             stars: 3,
-            description: "Jest to język dziedzinowy używany do tworzenia, modyfikowania relacyjnych baz danych oraz do umieszczania i pobierania danych z tych baz. Decyzję o sposobie przechowywania i pobrania danych pozostawia się systemowi zarządzania bazą danych.",
+            description: "MySQL is a popular open-source relational database management system (RDBMS) that uses SQL (Structured Query Language) for managing and manipulating data. It is widely used for web applications, powering many popular websites and content management systems. MySQL's scalability, performance, and reliability make it a go-to choice for many developers.",
+        },
+        {
+            name: "JavaScript",
+            icon: <SiJavascript size={50}/>,
+            stars: 3,
+            description: "JavaScript (JS) is a popular programming language used to create interactive and dynamic web pages. It runs on the client-side, meaning it executes in the user's web browser, and is commonly used to manipulate the Document Object Model (DOM) to add interactivity, handle user events, and create dynamic effects. JS is also used on the server-side with Node.js to build scalable and fast web applications.",
+        },
+        {
+            name: "React",
+            icon: <SiReact size={50}/>,
+            stars: 4,
+            description: "React is a popular JavaScript library used for building user interfaces. It is widely used for developing web applications, mobile applications, and single-page applications. React's component-based architecture, declarative programming style, and efficient rendering make it a go-to choice for many developers. Its vast ecosystem and active community also contribute to its popularity.",
+        },
+        {
+            name: "Tailwind CSS",
+            icon: <SiTailwindcss size={50}/>,
+            stars: 3,
+            description: "Tailwind CSS is a popular utility-first CSS framework used for building responsive user interfaces. It provides a set of pre-defined CSS classes that can be used to quickly style HTML elements, without the need to write custom CSS. Tailwind's modular, customizable, and consistent approach to styling makes it a go-to choice for many developers. Its active community and extensive documentation also contribute to its popularity.",
         },
         {
             name: "Git / GitHub",
             icon: <SiGit size={50}/>,
             stars: 3,
-            description: "Rozproszonym systemem kontroli wersji ułatwiającym pracę nad tworzeniem aplikacji, stron internetowych i innych narzędzi w grupach. System śledzi wszystkie wykonywane zmiany w plikach, a także umożliwia przywrócenie ich dowolnej, wcześniejszej wersji",
+            description: "Git is a popular distributed version control system used for tracking changes in source code during software development. It provides powerful features for collaboration, branching, merging, and versioning. Git is widely used by software developers and is a go-to choice for managing and sharing code.",
         },
         {
             name: "Linux",
             icon: <SiLinux size={50}/>,
             stars: 3,
-            description: "Rodzina uniksopodobnych systemów operacyjnych opartych na jądrze Linux. Linux jest jednym z przykładów wolnego i otwartego oprogramowania. Jego kod źródłowy może być dowolnie wykorzystywany, modyfikowany i rozpowszechniany.",
-        },
-        {
-            name: "React",
-            icon: <DiReact size={50}/>,
-            stars: 3,
-            description: "Biblioteka języka programowania JavaScript, która wykorzystywana jest do tworzenia interfejsów graficznych aplikacji internetowych. Często wykorzystywana do tworzenia aplikacji typu Single Page Application.",
+            description: "Linux is a popular open-source operating system widely used in servers, supercomputers, and mobile devices. Its flexibility, stability, and security make it a top choice for developers, as well as for hosting websites and applications. With its vast number of distributions and customization options, Linux can be tailored to meet specific needs.",
         },
         {
             name: "Docker / Docker Compose",
             icon: <SiDocker size={50}/>,
             stars: 3,
-            description: "Otwarte oprogramowanie służące do realizacji wirtualizacji na poziomie systemu operacyjnego (tzw. „konteneryzacji”), działające jako 'platforma dla programistów i administratorów do tworzenia, wdrażania i uruchamiania aplikacji rozproszonych'.",
+            description: "Docker is a popular containerization platform used for packaging, distributing, and running applications. It allows developers to create portable, isolated environments that can run on any machine. Docker Compose is a tool that simplifies the process of managing multiple containers and their dependencies. Docker's flexibility, scalability, and portability make it a go-to choice for many developers.",
         },
         {
             name: "Nginx",
             icon: <SiNginx size={50}/>,
-            stars: 2,
-            description: "Serwer WWW (HTTP) oraz serwer proxy dla HTTP i IMAP/POP3. Zaprojektowany z myślą o wysokiej dostępności i silnie obciążonych serwisach (nacisk na skalowalność i niską zajętość zasobów). Wydawany jest na licencji BSD.",
+            stars: 3,
+            description: "Nginx is a popular open-source web server used for serving static and dynamic content. It is also used as a reverse proxy and load balancer. Nginx's high-performance, low resource usage, and ability to handle large amounts of traffic make it a popular choice for many websites and web applications. Its rich set of features and modules also contribute to its popularity.",
         },
-    ];
+    ]
 
     return (
         <section className="bg-primary text-white px-5 py-32" id="technologies">
