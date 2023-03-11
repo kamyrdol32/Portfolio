@@ -20,7 +20,7 @@ This website is a personal portfolio showcasing the professional work and skills
     - Tailwindcss,
     
 ## Demo:
-`Comming soon`
+<https://kamilzeglen.pl/>
     
 ## Pictures:
 ### Main page
