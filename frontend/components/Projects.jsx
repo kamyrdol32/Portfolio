@@ -28,6 +28,14 @@ const Projects = () => {
             github: "https://github.com/franciszek-szeptycki/Instagram-2.0",
         },
         {
+            name: "SezonowyOgrod",
+            year: "2022 / 2023",
+            img: "./src/assets/Projects/SezonowyOgrod/Glowna.png",
+            desc: "",
+            demo: "https://sezonowyogrod.kamilzeglen.pl/",
+            github: "https://github.com/kamyrdol32/sezonowyogrod",
+        },
+        {
             name: "Hyped",
             year: "2022",
             img: "./src/assets/Projects/Hyped.pl/Glowna.png",
