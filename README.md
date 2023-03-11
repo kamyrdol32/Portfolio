@@ -15,7 +15,6 @@ This website is a personal portfolio showcasing the professional work and skills
 ## Technologies used:
   - **JavaScript**:
       - React,
-  - **SQL**
   - **HTML**
   - **CSS**:
     - Tailwindcss,
@@ -25,9 +24,9 @@ This website is a personal portfolio showcasing the professional work and skills
     
 ## Pictures:
 ### Main page
-![Main page](https://imgur.com/gXJhnN1)
+![Main page](https://i.imgur.com/gXJhnN1.png)
 ### About me
-![About_Me](https://imgur.com/hN09RfX)
+![About_Me](https://i.imgur.com/hN09RfX.png)
 ### Portfolio
-![Portfolio](https://imgur.com/PqvDS5N)
+![Portfolio](https://i.imgur.com/PqvDS5N.png)
 
