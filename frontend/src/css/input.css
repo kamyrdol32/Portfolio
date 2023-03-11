@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-nav {
+    @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+}
+
+
+/* hero */
+h1 {
+    font-family: 'Pacifico', cursive;
+    line-height: 1.5 !important;
+}
