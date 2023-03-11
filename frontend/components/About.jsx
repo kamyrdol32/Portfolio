@@ -21,7 +21,7 @@ export default function About() {
                         I started my career with Python about 2 years ago.
                         My current achievement is developing an application called "Hyped,"
                         which was created for my master's thesis project.
-                        I used "Python" with the "Flask" and "React" frameworks to develop it. Currently,
+                        I used Python with the Flask and React frameworks to develop it. Currently,
                         I am focusing on developing my skills as a FrontEnd developer (React, Tailwindcss),
                         but in the future, I aspire to become a DevOps engineer.
                     </p>
