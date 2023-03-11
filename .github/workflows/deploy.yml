@@ -21,6 +21,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd Projects/portfolio/
-            git pull origin master
+            git pull origin main
             docker network create evpanel_default
             docker compose up -d --build
