@@ -4,50 +4,66 @@ const Projects = () => {
 
     const projects = [
         {
-            name: "Hyped",
-            year: "2022",
-            img: "./src/assets/Projects/Hyped.pl/Glowna.png",
-            desc: "Jest to aplikacja stworzona na potrzeby pracy magisterskiej. W projekcie dominującą technologią BackEnd'ową jest Python (Flask) oraz React'a",
-            demo: "",
-            github: "https://github.com/kamyrdol32/hyped.pl",
+            name: "Portfolio",
+            year: "2023",
+            img: "./src/assets/Projects/Portfolio/Glowna.png",
+            desc: "It's a website that showcases projects, works, and achievements.",
+            demo: "https://kamilzeglen.pl",
+            github: "https://github.com/kamyrdol32/portfolio",
+        },
+        {
+            name: "EvPanel",
+            year: "2023",
+            img: "./src/assets/Projects/EvPanel/Glowna.png",
+            desc: "This is an application created for a master's thesis. The dominant backend technology used in the project is Python (Flask), and the frontend is built using React.",
+            demo: "https://evpanel.kamilzeglen.pl",
+            github: "https://github.com/kamyrdol32/evpanel",
         },
         {
             name: "Instagram",
             year: "2022 / 2023",
-            img: "./src/assets/Projects/Instagram2.0/Zdjecia.png",
-            desc: "Aplikacja stworzona wraz z 'franciszek-szeptycki' w celu rozwijania swojego portfolio. Wykorzystane technologie: Flask / React",
+            img: "./src/assets/Projects/Instagram2.0/Logowanie.png",
+            desc: "The application was created in collaboration with 'franciszek-szeptycki' for portfolio development. The technologies used include Flask for the backend and React for the frontend.",
             demo: "",
-            github: "",
+            github: "https://github.com/franciszek-szeptycki/Instagram-2.0",
+        },
+        {
+            name: "Hyped",
+            year: "2022",
+            img: "./src/assets/Projects/Hyped.pl/Glowna.png",
+            desc: "This is an application created for a master's thesis, with Python (Flask) as the dominant backend technology and React as the frontend technology used in the project.",
+            demo: "",
+            github: "https://github.com/kamyrdol32/hyped",
         },
         {
             name: "Portfolio V1",
-            year: "2021",
-            img: "./src/assets/Projects/Portfolio/Glowna.png",
-            desc: "Aplikacja stworzona na potrzeby zaprezentowania siebie oraz swoich dotychczasowych osiągnięć w programowaniu.",
+            year: "2022",
+            img: "./src/assets/Projects/Portfolio_old/Glowna.png",
+            desc: "This application was created to showcase oneself and their programming achievements.",
             demo: "",
-            github: "",
+            github: "https://github.com/kamyrdol32/portfolio_old",
         },
         {
             name: "Kadr",
-            year: "2020",
+            year: "2021",
             img: "./src/assets/Projects/Kadr.pl/Glowna.png",
-            desc: "Jest to aplikacja stworzona na potrzeby pracy inżynierskiej. W projekcie dominującą technologia jest Python (Flask).",
+            desc: "This is an application created for the purposes of an engineering thesis. The dominant technology used in the project is Python (Flask).",
             demo: "",
-            github: "",
+            github: "https://github.com/kamyrdol32/kadr",
         },
         {
             name: "Ambiwave",
-            year: "2020",
+            year: "2021",
             img: "./src/assets/Projects/AmbiWave.pl/Glowna.png",
-            desc: "Aplikacja napisana w frameworku Flask (Python) w procesie nauki tej technologii. W minimalnym stopniu wykorzystano również JavaScript",
+            desc: "An application developed while learning Flask (Python) framework. JavaScript was also used to a minimal extent.",
             demo: "",
-            github: "",
+            github: "https://github.com/kamyrdol32/ambiwave",
         },
     ];
 
     return (
         <section className="bg-secondary text-white px-5 py-32" id="projects">
-            <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
+            <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
                 <div className="about-info mb-5">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[135px] border-indigo-600 pb-2">
                         <span className="text-accent">P</span>rojects
@@ -70,7 +86,7 @@ const Projects = () => {
                             </p>
                             <div className="flex justify-center">
 
-                                {/* DEMO*/}
+                                {/* LIVE */}
                                 { project.demo && (
                                     <a
                                         href={project.demo}
@@ -80,7 +96,7 @@ const Projects = () => {
                                     </a>
                                 )}
 
-                                {/* GITHUB*/}
+                                {/* GITHUB */}
                                 { project.github && (
                                     <a
                                         href={project.github}

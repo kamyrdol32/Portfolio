@@ -9,7 +9,7 @@ export default function Hero() {
     return (
         <section className="bg-primary px-5 text-white py-32">
             <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
-                <div className="hero-info pb-5 md:pb-0">
+                <div className="pb-5 md:pb-0">
                     <h1 className="text-4xl lg:text-5xl">
                         Hi! <br/>I am <span className="text-accent">K</span>amil <br/>
                         Backend Developer
@@ -47,7 +47,7 @@ export default function Hero() {
                     <img
                         src="./src/assets/kamil.jpg"
                         alt="Kamil Zeglen"
-                        className="w-3/4 ml-auto rounded-full border-4 border-accent"
+                        className="hidden w-3/4 md:block ml-auto rounded-full border-4 border-accent"
                     />
                 </div>
             </div>

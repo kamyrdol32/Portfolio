@@ -34,21 +34,21 @@ export default function Navbar() {
             <nav
                 className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
             >
-                <ul className="flex flex-col">
+                <ul className="flex flex-col divide-y-2 gap-1">
                     <li>
-                        <a href="/#about">About</a>
+                        <a href="/#about" className="font-bold hover:text-accent px-4 text-lg">About</a>
                     </li>
                     <li>
-                        <a href="/#projects">Projects</a>
+                        <a href="/#projects" className="font-bold hover:text-accent px-4 py-5 text-lg">Projects</a>
                     </li>
                     <li>
-                        <a href="/#blog">Blog</a>
+                        <a href="/#blog" className="font-bold hover:text-accent px-4 py-5 text-lg">Blog</a>
                     </li>
                     <li>
-                        <a href="/#contact">Contact</a>
+                        <a href="/#contact" className="font-bold hover:text-accent px-4 py-5 text-lg">Contact</a>
                     </li>
                     <li>
-                        <a href="/#resume">Resume</a>
+                        <a href="/#resume" className="font-bold hover:text-accent px-4 py-5 text-lg">Resume</a>
                     </li>
                 </ul>
             </nav>

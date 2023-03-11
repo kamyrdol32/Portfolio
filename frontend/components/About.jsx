@@ -4,24 +4,26 @@ export default function About() {
     return (
         <section className="bg-secondary text-white px-5 py-32" id="about">
             <div className="container mx-auto grid items-center justify-center">
-                <div className="about-text p-3">
+                <div className="p-3">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[170px] border-indigo-600 pb-2">
                         <span className="text-accent">A</span>bout Me
                     </h2>
 
                     <p className="pb-5">
-                        Cześć! Nazywam sie Kamil Żegleń i od kilku lat zajmuję sie programowania.
+                        Hi! My name is Kamil Żegleń and I have been programming for several years.
                     </p>
                     <p className="pb-5">
-                        Aktualnie jestem studentem na "Uniwersytecie Pedagogicznym im. Komisji Edukacji Narodowej w Krakowie",
-                        gdzie studiuję "Edukacje Techniczno-Informatyczną" na poziomie magisterskim.
+                        Currently, I am a graduate of the Pedagogical University of Krakow,
+                        where I studied Technical and Computer Education at the engineering and master's level.
                     </p>
 
                     <p>
-                        Swoją karierę z Python'em rozpocząłem około 2-lata temu,
-                        moim dotychczasowym osiągnięciem jest napisanie "Aplikacji do
-                        zarządzania kadrami" która powstała na potrzeby pracy inżynierskiej
-                        na studiach gdzie został wykorzystany język "Python" oraz framework "Flask".
+                        I started my career with Python about 2 years ago.
+                        My current achievement is developing an application called "Hyped,"
+                        which was created for my master's thesis project.
+                        I used "Python" with the "Flask" and "React" frameworks to develop it. Currently,
+                        I am focusing on developing my skills as a FrontEnd developer (React, Tailwindcss),
+                        but in the future, I aspire to become a DevOps engineer.
                     </p>
                 </div>
 
