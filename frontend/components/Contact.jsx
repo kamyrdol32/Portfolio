@@ -14,6 +14,9 @@ export default function Contact() {
                 <p className="py-2">
                     <span className="font-bold">Phone:</span> +48 661 514 204
                 </p>
+                <p className="py-2">
+                    <span className="font-bold">City:</span> Kraków
+                </p>
             </div>
         </section>
     );
