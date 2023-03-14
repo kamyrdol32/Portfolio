@@ -87,7 +87,7 @@ export default function Technologies() {
 
     return (
         <section className="bg-primary text-white px-5 py-32" id="technologies">
-            <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
+            <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
                 <div className="about-info mb-5">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] border-indigo-600 pb-2">
                         <span className="text-accent">T</span>echnologies
@@ -95,10 +95,10 @@ export default function Technologies() {
                 </div>
             </div>
 
-            <div className="container mx-auto grid md:grid-cols-3 gap-10">
+            <div className="container mx-auto grid md:grid-cols-3 gap-10 p-3">
                 {technologies.map((technology) => (
                     <div className="flex" key={technology.name}>
-                        <div className="flex flex-col justify-center items-center border-2">
+                        <div className="flex flex-col items-center border-2 p-3">
                             <h3 className="p-2 text-2xl font-bold">{technology.name}</h3>
                             <div className="p-2 text-accent">{technology.icon}</div>
 
