@@ -36,19 +36,19 @@ export default function Navbar() {
             >
                 <ul className="flex flex-col divide-y-2 gap-1">
                     <li>
-                        <a href="/#about" className="font-bold hover:text-accent px-4 text-lg">About</a>
+                        <a href="/#about" onClick={handleToggle} className="font-bold hover:text-accent px-4 text-lg">About</a>
                     </li>
                     <li>
-                        <a href="/#projects" className="font-bold hover:text-accent px-4 py-5 text-lg">Projects</a>
+                        <a href="/#projects" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Projects</a>
                     </li>
                     <li>
-                        <a href="/#blog" className="font-bold hover:text-accent px-4 py-5 text-lg">Blog</a>
+                        <a href="/#blog" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Blog</a>
                     </li>
                     <li>
-                        <a href="/#contact" className="font-bold hover:text-accent px-4 py-5 text-lg">Contact</a>
+                        <a href="/#contact" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Contact</a>
                     </li>
                     <li>
-                        <a href="/#resume" className="font-bold hover:text-accent px-4 py-5 text-lg">Resume</a>
+                        <a href="/#resume" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Resume</a>
                     </li>
                 </ul>
             </nav>
