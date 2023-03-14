@@ -10,7 +10,7 @@ export default function Hero() {
     return (
         <section className="bg-primary px-5 text-white py-32">
             <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between p-5">
-                <div className="pb-5 md:pb-0">
+                <div className="pb-5 md:pb-">
                     <h1 className="text-4xl lg:text-5xl">
                         Hi! <br/>I am <span className="text-accent">Kamil</span> <br/>
                         <TypeIt
@@ -28,7 +28,6 @@ export default function Hero() {
                                     .pause(1000)
                                     .move(18)
                                     .type("!")
-                                    .pause(1000)
                                     .go();
 
                                 // Remember to return it!
@@ -37,7 +36,7 @@ export default function Hero() {
                         />
                     </h1>
 
-                    <p className="pr-5 mr-5">
+                    <p className="pr-5 mr-5 py-5">
                         I am a passionate developer who loves to create new things. I am currently working on my own
                         projects and learning new technologies.
                     </p>
