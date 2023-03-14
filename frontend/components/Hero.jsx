@@ -4,6 +4,7 @@ import TypeIt from "typeit-react";
 import {
     AiOutlineGithub,
     AiOutlineLinkedin,
+    AiOutlineFilePdf,
 } from "react-icons/ai";
 import {useTranslation} from "react-i18next";
 
@@ -55,12 +56,6 @@ export default function Hero() {
 
                     <div className="flex py-5 ">
                         <a
-                            href="/#projects"
-                            className="mr-4 btn bg-accent border-2 bg-secondary border-accent text-white px-6 py-3 hover:bg-transparent"
-                        >
-                            {t("see_projects")}
-                        </a>
-                        <a
                             href="https://github.com/kamyrdol32"
                             className="pr-4 inline-block text-accent hover:text-white"
                         >
@@ -73,6 +68,33 @@ export default function Hero() {
                         >
                             {" "}
                             <AiOutlineLinkedin size={55}/>{" "}
+                        </a>
+                        {i18n.language === "pl" ? (
+                            <a
+                                href="./src/assets/CV/Kamil Żegleń - ANG.pdf"
+                                className="pr-4 inline-block text-accent hover:text-white"
+                            >
+                                {" "}
+                                <AiOutlineFilePdf size={55}/>{" "}
+                            </a>
+                        ) : (
+                            <a
+                                href="./src/assets/CV/Kamil Żegleń - PL.pdf"
+                                className="pr-4 inline-block text-accent hover:text-white"
+                            >
+                                {" "}
+                                <AiOutlineFilePdf size={55}/>{" "}
+                            </a>
+                        )}
+
+                    </div>
+
+                    <div className="flex py-5 ">
+                        <a
+                            href="/#projects"
+                            className="mr-4 btn bg-accent border-2 bg-secondary border-accent text-white px-6 py-3 hover:bg-transparent"
+                        >
+                            {t("see_projects")}
                         </a>
                     </div>
                 </div>
