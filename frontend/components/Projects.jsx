@@ -79,7 +79,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto grid md:grid-cols-3 gap-10">
+            <div className="container mx-auto grid md:grid-cols-3 gap-10 p-3">
                 {projects.map((project) => (
                     <div className="relative border-2 hover:border-accent bg-black" key={project.name}>
                         <img src={project.img} alt={project.name}/>

@@ -1,4 +1,5 @@
 import React from "react";
+import TypeIt from "typeit-react";
 
 import {
     AiOutlineGithub,
@@ -8,15 +9,37 @@ import {
 export default function Hero() {
     return (
         <section className="bg-primary px-5 text-white py-32">
-            <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
+            <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between p-5">
                 <div className="pb-5 md:pb-0">
                     <h1 className="text-4xl lg:text-5xl">
-                        Hi! <br/>I am <span className="text-accent">K</span>amil <br/>
-                        Backend Developer
+                        Hi! <br/>I am <span className="text-accent">Kamil</span> <br/>
+                        <TypeIt
+                            getBeforeInit={(instance) => {
+                                instance
+                                    .type("BackEnd Developer")
+                                    .pause(1000)
+                                    .move(-10)
+                                    .pause(500)
+                                    .delete(7)
+                                    .type("FrontEnd")
+                                    .pause(1000)
+                                    .delete(8)
+                                    .type("FullStack")
+                                    .pause(1000)
+                                    .move(18)
+                                    .type("!")
+                                    .pause(1000)
+                                    .go();
+
+                                // Remember to return it!
+                                return instance;
+                            }}
+                        />
                     </h1>
 
                     <p className="pr-5 mr-5">
-                        I am a passionate developer who loves to create new things. I am currently working on my own projects and learning new technologies.
+                        I am a passionate developer who loves to create new things. I am currently working on my own
+                        projects and learning new technologies.
                     </p>
 
                     <div className="flex py-5 ">
@@ -43,11 +66,11 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="hero-img p-3">
+                <div className="p-3">
                     <img
                         src="./src/assets/kamil.jpg"
                         alt="Kamil Zeglen"
-                        className="hidden w-3/4 md:block ml-auto rounded-full border-4 border-accent"
+                        className="hidden w-96 md:block ml-auto rounded-full border-4 border-accent items-center justify-center"
                     />
                 </div>
             </div>
