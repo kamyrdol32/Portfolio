@@ -1,13 +1,15 @@
-import React from "react";
+import {useTranslation} from "react-i18next";
 
 const Projects = () => {
+
+    const {t, i18n} = useTranslation();
 
     const projects = [
         {
             name: "Portfolio",
             year: "2023",
             img: "./src/assets/Projects/Portfolio/Glowna.png",
-            desc: "It's a website that showcases projects, works, and achievements.",
+            desc: "projects_portfolio_desc",
             demo: "https://kamilzeglen.pl",
             github: "https://github.com/kamyrdol32/portfolio",
         },
@@ -15,7 +17,7 @@ const Projects = () => {
             name: "EvPanel",
             year: "2023",
             img: "./src/assets/Projects/EvPanel/Glowna.png",
-            desc: "This is an application created for a master's thesis. The dominant backend technology used in the project is Python (Flask), and the frontend is built using React.",
+            desc: "projects_evpanel_desc",
             demo: "https://evpanel.kamilzeglen.pl",
             github: "https://github.com/kamyrdol32/evpanel",
         },
@@ -23,7 +25,7 @@ const Projects = () => {
             name: "Instagram",
             year: "2022 / 2023",
             img: "./src/assets/Projects/Instagram2.0/Logowanie.png",
-            desc: "The application was created in collaboration with 'franciszek-szeptycki' for portfolio development. The technologies used include Flask for the backend and React for the frontend.",
+            desc: "projects_instagram_desc",
             demo: "",
             github: "https://github.com/franciszek-szeptycki/Instagram-2.0",
         },
@@ -31,7 +33,7 @@ const Projects = () => {
             name: "SezonowyOgrod",
             year: "2022 / 2023",
             img: "./src/assets/Projects/SezonowyOgrod/Glowna.png",
-            desc: "",
+            desc: "projects_sezonowyogrod_desc",
             demo: "https://sezonowyogrod.kamilzeglen.pl/",
             github: "https://github.com/kamyrdol32/sezonowyogrod",
         },
@@ -39,7 +41,7 @@ const Projects = () => {
             name: "Hyped",
             year: "2022",
             img: "./src/assets/Projects/Hyped.pl/Glowna.png",
-            desc: "This is an application created for a master's thesis, with Python (Flask) as the dominant backend technology and React as the frontend technology used in the project.",
+            desc: "projects_hyped_desc",
             demo: "",
             github: "https://github.com/kamyrdol32/hyped",
         },
@@ -47,7 +49,7 @@ const Projects = () => {
             name: "Portfolio V1",
             year: "2022",
             img: "./src/assets/Projects/Portfolio_old/Glowna.png",
-            desc: "This application was created to showcase oneself and their programming achievements.",
+            desc: "projects_portfolio_old_desc",
             demo: "",
             github: "https://github.com/kamyrdol32/portfolio_old",
         },
@@ -55,7 +57,7 @@ const Projects = () => {
             name: "Kadr",
             year: "2021",
             img: "./src/assets/Projects/Kadr.pl/Glowna.png",
-            desc: "This is an application created for the purposes of an engineering thesis. The dominant technology used in the project is Python (Flask).",
+            desc: "projects_kadr_desc",
             demo: "",
             github: "https://github.com/kamyrdol32/kadr",
         },
@@ -63,7 +65,7 @@ const Projects = () => {
             name: "Ambiwave",
             year: "2021",
             img: "./src/assets/Projects/AmbiWave.pl/Glowna.png",
-            desc: "An application developed while learning Flask (Python) framework. JavaScript was also used to a minimal extent.",
+            desc: "projects_ambiwave_desc",
             demo: "",
             github: "https://github.com/kamyrdol32/ambiwave",
         },
@@ -74,12 +76,12 @@ const Projects = () => {
             <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
                 <div className="about-info mb-5">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[135px] border-accent pb-2">
-                        <span className="text-accent">P</span>rojects
+                        {t('projects_title')}
                     </h2>
                 </div>
             </div>
 
-            <div className="container mx-auto grid md:grid-cols-3 gap-10 p-3">
+            <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 p-3">
                 {projects.map((project) => (
                     <div className="relative border-2 hover:border-accent bg-black" key={project.name}>
                         <img src={project.img} alt={project.name}/>
@@ -89,8 +91,8 @@ const Projects = () => {
                                 {project.name}
                             </h3>
                             <p className="py-1 px-2 text-center text-white text-sm">{project.year}</p>
-                            <p className="py-2 px-2 text-center text-white">
-                                {project.desc}
+                            <p className="hidden xl:block py-2 px-2 text-center text-white">
+                                {t(project.desc)}
                             </p>
                             <div className="flex justify-center">
 
