@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return (
         <header className="flex justify-between px-5 py-3 bg-secondary text-white fixed w-full z-10 border-b-2 border-accent">
-            <a href="/" className="text-2xl font-bold hover:text-accent">
+            <a href="#" className="text-2xl font-bold hover:text-accent">
                 Kamil Żegleń
             </a>
 
