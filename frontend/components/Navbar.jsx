@@ -39,16 +39,13 @@ export default function Navbar() {
                         <a href="/#about" onClick={handleToggle} className="font-bold hover:text-accent px-4 text-lg">About</a>
                     </li>
                     <li>
+                        <a href="/#technologies" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Technologies</a>
+                    </li>
+                    <li>
                         <a href="/#projects" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Projects</a>
                     </li>
                     <li>
-                        <a href="/#blog" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Blog</a>
-                    </li>
-                    <li>
                         <a href="/#contact" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Contact</a>
-                    </li>
-                    <li>
-                        <a href="/#resume" onClick={handleToggle} className="font-bold hover:text-accent px-4 py-5 text-lg">Resume</a>
                     </li>
                 </ul>
             </nav>
