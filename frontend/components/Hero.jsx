@@ -9,8 +9,17 @@ import {
 export default function Hero() {
     return (
         <section className="bg-primary px-5 text-white py-32">
-            <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between p-5">
-                <div className="pb-5 md:pb-">
+            <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between p-3">
+                <div className="pb-5">
+
+                    <div className="flex p-3 md:hidden items-center justify-center">
+                        <img
+                            src="./src/assets/kamil.jpg"
+                            alt="Kamil Zeglen"
+                            className="flex w-64 rounded-full border-4 border-accent"
+                        />
+                    </div>
+
                     <h1 className="text-4xl lg:text-5xl">
                         Hi! <br/>I am <span className="text-accent">Kamil</span> <br/>
                         <TypeIt
