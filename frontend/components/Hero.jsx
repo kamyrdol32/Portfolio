@@ -53,7 +53,7 @@ export default function Hero() {
                     <div className="flex py-5 ">
                         <a
                             href="/#projects"
-                            className="mr-4 btn bg-accent border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent"
+                            className="mr-4 btn bg-accent border-2 bg-secondary border-accent text-white px-6 py-3 hover:bg-transparent"
                         >
                             See Projects
                         </a>
