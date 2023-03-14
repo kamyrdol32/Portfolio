@@ -69,24 +69,6 @@ export default function Hero() {
                             {" "}
                             <AiOutlineLinkedin size={55}/>{" "}
                         </a>
-                        {i18n.language === "pl" ? (
-                            <a
-                                href="./src/assets/CV/Kamil Żegleń - ANG.pdf"
-                                className="pr-4 inline-block text-accent hover:text-white"
-                            >
-                                {" "}
-                                <AiOutlineFilePdf size={55}/>{" "}
-                            </a>
-                        ) : (
-                            <a
-                                href="./src/assets/CV/Kamil Żegleń - PL.pdf"
-                                className="pr-4 inline-block text-accent hover:text-white"
-                            >
-                                {" "}
-                                <AiOutlineFilePdf size={55}/>{" "}
-                            </a>
-                        )}
-
                     </div>
 
                     <div className="flex py-5 ">
@@ -96,6 +78,21 @@ export default function Hero() {
                         >
                             {t("see_projects")}
                         </a>
+                        {i18n.language === "pl" ? (
+                            <a
+                                href="./src/assets/CV/Kamil Żegleń - Pl.pdf"
+                                className="mr-4 btn bg-accent border-2 bg-secondary border-accent text-white px-6 py-3 hover:bg-transparent"
+                            >
+                                {t("see_cv")}
+                            </a>
+                        ) : (
+                            <a
+                                href="./src/assets/CV/Kamil Żegleń - ANG.pdf"
+                                className="mr-4 btn bg-accent border-2 bg-secondary border-accent text-white px-6 py-3 hover:bg-transparent"
+                            >
+                                {t("see_cv")}
+                            </a>
+                        )}
                     </div>
                 </div>
 
