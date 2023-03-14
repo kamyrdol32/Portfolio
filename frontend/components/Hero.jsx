@@ -80,7 +80,7 @@ export default function Hero() {
                         </a>
                         {i18n.language === "pl" ? (
                             <a
-                                href="./src/assets/CV/Kamil Żegleń - Pl.pdf"
+                                href="./src/assets/CV/Kamil Żegleń - PL.pdf"
                                 className="mr-4 btn bg-accent border-2 bg-secondary border-accent text-white px-6 py-3 hover:bg-transparent"
                             >
                                 {t("see_cv")}
