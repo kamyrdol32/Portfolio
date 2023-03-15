@@ -46,11 +46,11 @@ const Projects = () => {
             github: "https://github.com/kamyrdol32/hyped",
         },
         {
-            name: "Portfolio V1",
+            name: "Portfolio Old",
             year: "2022",
             img: "./src/assets/Projects/Portfolio_old/Glowna.png",
             desc: "projects_portfolio_old_desc",
-            demo: "",
+            demo: "https://old.kamilzeglen.pl/",
             github: "https://github.com/kamyrdol32/portfolio_old",
         },
         {
