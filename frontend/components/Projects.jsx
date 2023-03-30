@@ -83,9 +83,9 @@ const Projects = () => {
 
             <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-2 p-3">
                 {projects.map((project) => (
-                    <>
+                    <div key={project.name}>
                         <h3 className="block sm:hidden text-xl font-bold text-center text-accent pt-5">{project.name}</h3>
-                        <div className="relative border-2 hover:border-accent bg-black" key={project.name}>
+                        <div className="relative border-2 hover:border-accent bg-black">
                             <img src={project.img} alt={project.name}/>
                             <div
                                 className="hidden sm:block flex absolute left-0 right-0 bottom-0 top-0 mx-auto w-[100%] h-[100%] bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
@@ -147,7 +147,7 @@ const Projects = () => {
                                 </a>
                             )}
                         </div>
-                    </>
+                    </div>
                 ))}
             </div>
         </section>
