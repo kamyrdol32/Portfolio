@@ -25,7 +25,7 @@ export default function Hero() {
                         />
                     </div>
 
-                    <h1 className="text-4xl lg:text-5xl font-bold">
+                    <h1 className="text-3xl lg:text-5xl font-bold">
                         {t("hi")} <br/>{t("i_am")} <span className="text-accent">Kamil</span> <br/>
                         <TypeIt
                             getBeforeInit={(instance) => {
