@@ -42,7 +42,7 @@ const Projects = () => {
             year: "2022",
             img: "./src/assets/Projects/Hyped.pl/Glowna.png",
             desc: "projects_hyped_desc",
-            demo: "",
+            demo: "https://hyped.kamilzeglen.pl/",
             github: "https://github.com/kamyrdol32/hyped",
         },
         {
