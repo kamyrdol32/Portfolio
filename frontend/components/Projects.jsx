@@ -81,43 +81,73 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 p-3">
+            <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-2 p-3">
                 {projects.map((project) => (
-                    <div className="relative border-2 hover:border-accent bg-black" key={project.name}>
-                        <img src={project.img} alt={project.name}/>
-                        <div
-                            className="flex absolute left-0 right-0 bottom-0 top-0 mx-auto w-[100%] h-[100%] bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
-                            <h3 className="text-2xl font-bold text-center text-accent">
-                                {project.name}
-                            </h3>
-                            <p className="py-1 px-2 text-center text-white text-sm">{project.year}</p>
-                            <p className="hidden xl:block py-2 px-2 text-center text-white">
-                                {t(project.desc)}
-                            </p>
-                            <div className="flex justify-center">
+                    <>
+                        <h3 className="block sm:hidden text-xl font-bold text-center text-accent pt-5">{project.name}</h3>
+                        <div className="relative border-2 hover:border-accent bg-black" key={project.name}>
+                            <img src={project.img} alt={project.name}/>
+                            <div
+                                className="hidden sm:block flex absolute left-0 right-0 bottom-0 top-0 mx-auto w-[100%] h-[100%] bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
+                                <h3 className="text-2xl font-bold text-center text-accent">
+                                    {project.name}
+                                </h3>
+                                <p className="py-1 px-2 text-center text-white text-sm">{project.year}</p>
+                                <p className="hidden xl:block py-2 px-2 text-center text-white">
+                                    {t(project.desc)}
+                                </p>
 
-                                {/* LIVE */}
-                                { project.demo && (
-                                    <a
-                                        href={project.demo}
-                                        className="m-1 btn bg-accent border-2 border-secondary text-white px-6 py-3"
-                                    >
-                                        Live
-                                    </a>
-                                )}
+                                {/* Desktop INFO */}
 
-                                {/* GITHUB */}
-                                { project.github && (
-                                    <a
-                                        href={project.github}
-                                        className="m-1 btn bg-accent border-2 border-secondary text-white px-6 py-3"
-                                    >
-                                        Github
-                                    </a>
-                                )}
+                                <div className="flex justify-center">
+
+                                    {/* LIVE */}
+                                    {project.demo && (
+                                        <a
+                                            href={project.demo}
+                                            className="m-1 btn bg-accent border-2 border-secondary text-white px-6 py-3"
+                                        >
+                                            Live
+                                        </a>
+                                    )}
+
+                                    {/* GITHUB */}
+                                    {project.github && (
+                                        <a
+                                            href={project.github}
+                                            className="m-1 btn bg-accent border-2 border-secondary text-white px-6 py-3"
+                                        >
+                                            Github
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                        {/* Mobile INFO */}
+                        <div className="flex justify-center block sm:hidden">
+
+                            {/* LIVE */}
+                            {project.demo && (
+                                <a
+                                    href={project.demo}
+                                    className="w-1/2 m-1 btn bg-accent text-white px-14 py-3"
+                                >
+                                    Live
+                                </a>
+                            )}
+
+                            {/* GITHUB */}
+                            {project.github && (
+                                <a
+                                    href={project.github}
+                                    className="w-1/2 m-1 btn bg-accent text-white px-12 py-3"
+                                >
+                                    Github
+                                </a>
+                            )}
+                        </div>
+                    </>
                 ))}
             </div>
         </section>

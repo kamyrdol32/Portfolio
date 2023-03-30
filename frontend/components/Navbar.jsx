@@ -9,6 +9,7 @@ export default function Navbar() {
     function changeLanguage(language) {
         i18n.changeLanguage(language);
     }
+
     const [toggle, setToggle] = useState(false);
 
     const handleToggle = () => setToggle(!toggle);
@@ -31,20 +32,21 @@ export default function Navbar() {
                            href="/#technologies">{t("technologies")}</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-accent px-4 py-5 text-lg" href="/#projects">{t("projects")}</a>
+                        <a className="font-bold hover:text-accent px-4 py-5 text-lg"
+                           href="/#projects">{t("projects")}</a>
                     </li>
                     <li>
                         <a className="font-bold hover:text-accent px-4 py-5 text-lg" href="/#contact">{t("contact")}</a>
                     </li>
                     <li className="flex items-center justify-center px-4 ">
                         {/* Language */}
-                            {i18n.language === 'pl' ?
-                                <img src="/src/assets/Flags/PL.jpg" onClick={() => changeLanguage("en")}
-                                     className="w-8 h-4" alt="Polish flag"/>
-                                :
-                                <img src="/src/assets/Flags/ENG.jpg" onClick={() => changeLanguage("pl")}
-                                     className="w-8 h-4" alt="Polish flag"/>
-                            }
+                        {i18n.language === 'pl' ?
+                            <img src="/src/assets/Flags/PL.jpg" onClick={() => changeLanguage("en")}
+                                 className="w-8 h-4" alt="Polish flag"/>
+                            :
+                            <img src="/src/assets/Flags/ENG.jpg" onClick={() => changeLanguage("pl")}
+                                 className="w-8 h-4" alt="Polish flag"/>
+                        }
                     </li>
                 </ul>
 
@@ -54,22 +56,33 @@ export default function Navbar() {
             <nav
                 className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
             >
-                <ul className="flex flex-col divide-y-2 gap-1">
-                    <li>
+                <ul className="flex flex-col divide-y-2">
+                    <li className="py-2">
                         <a href="/#about" onClick={handleToggle}
                            className="font-bold hover:text-accent px-4 text-lg">{t("about")}</a>
                     </li>
-                    <li>
+                    <li className="py-2">
                         <a href="/#technologies" onClick={handleToggle}
                            className="font-bold hover:text-accent px-4 py-5 text-lg">{t("technologies")}</a>
                     </li>
-                    <li>
+                    <li className="py-2">
                         <a href="/#projects" onClick={handleToggle}
                            className="font-bold hover:text-accent px-4 py-5 text-lg">{t("projects")}</a>
                     </li>
-                    <li>
+                    <li className="py-2">
                         <a href="/#contact" onClick={handleToggle}
                            className="font-bold hover:text-accent px-4 py-5 text-lg">{t("contact")}</a>
+                    </li>
+                    <li className="py-2">
+                        <div className="flex items-center justify-center px-4 py-8">
+                            {i18n.language === 'pl' ?
+                                <img src="/src/assets/Flags/PL.jpg" onClick={() => changeLanguage("en")}
+                                     className="w-16 h-8" alt="Polish flag"/>
+                                :
+                                <img src="/src/assets/Flags/ENG.jpg" onClick={() => changeLanguage("pl")}
+                                     className="w-16 h-8" alt="Polish flag"/>
+                            }
+                        </div>
                     </li>
                 </ul>
             </nav>
