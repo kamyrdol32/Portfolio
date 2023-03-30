@@ -89,7 +89,7 @@ const Projects = () => {
                             <img src={project.img} alt={project.name}/>
                             <div
                                 className="hidden sm:block flex absolute left-0 right-0 bottom-0 top-0 mx-auto w-[100%] h-[100%] bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
-                                <h3 className="text-2xl font-bold text-center text-accent">
+                                <h3 className="text-2xl font-bold text-center text-accent xl:pt-2">
                                     {project.name}
                                 </h3>
                                 <p className="py-1 px-2 text-center text-white text-sm">{project.year}</p>
