@@ -21,19 +21,21 @@ This website is a personal portfolio showcasing the professional work and skills
   
 ### Environment Variables
 To run this project, you will need to add the following environment variables to your .env file:
-  - **VITE_I18NEXUS_API_KEY** - API Key from i18nexus 
+```bash
+VITE_I18NEXUS_API_KEY=""
+```
 
 ### Instruction
 To deploy this project create docker network
 
 ```bash
-  docker network create portfolio_default
+docker network create portfolio_default
 ```
 
 and run project
 
 ```bash
-  docker-compose up
+docker-compose up
 ```
 
 ## Demo:
