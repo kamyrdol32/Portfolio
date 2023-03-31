@@ -88,10 +88,10 @@ export default function Technologies() {
     ]
 
     return (
-        <section className="bg-primary text-white px-5 py-32" id="technologies">
+        <section className="text-lg bg-primary text-white px-5 py-32" id="technologies">
             <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
                 <div className="about-info mb-5">
-                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] border-accent pb-2">
+                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[205px] border-accent pb-2">
                         {t("technologies_title")}
                     </h2>
                 </div>

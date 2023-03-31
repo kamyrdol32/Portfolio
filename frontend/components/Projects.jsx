@@ -75,7 +75,7 @@ const Projects = () => {
         <section className="bg-secondary text-white px-5 py-32" id="projects">
             <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
                 <div className="about-info mb-5">
-                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[135px] border-accent pb-2">
+                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[140px] border-accent pb-2">
                         {t('projects_title')}
                     </h2>
                 </div>

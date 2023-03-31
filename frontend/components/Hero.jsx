@@ -13,7 +13,7 @@ export default function Hero() {
     const {t, i18n} = useTranslation();
 
     return (
-        <section className="bg-primary px-5 text-white py-32">
+        <section className="text-lg bg-primary px-5 text-white py-32">
             <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between p-3">
                 <div className="pb-5">
 
@@ -96,11 +96,11 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="p-3">
+                <div className="p-3 flex items-center justify-center">
                     <img
                         src="./src/assets/kamil.jpg"
                         alt="Kamil Zeglen"
-                        className="hidden w-96 md:block ml-auto rounded-full border-4 border-accent items-center justify-center"
+                        className="hidden w-96 md:block rounded-full border-4 border-accent"
                     />
                 </div>
             </div>
