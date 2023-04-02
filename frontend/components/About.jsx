@@ -1,29 +1,27 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 export default function About() {
+
+    const {t, i18n} = useTranslation();
+
     return (
-        <section className="bg-secondary text-white px-5 py-32" id="about">
-            <div className="container mx-auto grid items-center justify-center">
+        <section className="text-lg text-justify bg-secondary text-white px-5 py-32" id="about">
+            <div className="container mx-auto grid items-center justify-center md:grid-cols-2">
                 <div className="p-3">
-                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[170px] border-indigo-600 pb-2">
-                        <span className="text-accent">A</span>bout Me
+                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[125px] border-accent pb-2">
+                        {t("about_title")}
                     </h2>
 
                     <p className="pb-5">
-                        Hi! My name is Kamil Żegleń and I have been programming for several years.
+                        {t("about_description")}
                     </p>
                     <p className="pb-5">
-                        Currently, I am a graduate of the Pedagogical University of Krakow,
-                        where I studied Technical and Computer Education at the engineering and master's level.
+                        {t("about_description_2")}
                     </p>
 
                     <p>
-                        I started my career with Python about 2 years ago.
-                        My current achievement is developing an application called "Hyped,"
-                        which was created for my master's thesis project.
-                        I used Python with the Flask and React frameworks to develop it. Currently,
-                        I am focusing on developing my skills as a FrontEnd developer (React, Tailwindcss),
-                        but in the future, I aspire to become a DevOps engineer.
+                        {t("about_description_3")}
                     </p>
                 </div>
 

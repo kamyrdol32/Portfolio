@@ -8,5 +8,10 @@ export default defineConfig({
         host: true,
         strictPort: true,
         port: 3000,
+        hmr: {
+            host: 'kamilzeglen.pl',
+            port: 3000,
+            protocol: 'wss',
+        }
     }
 })
