@@ -10,7 +10,23 @@ This website is a personal portfolio showcasing the professional work and skills
 | **Kamil Żegleń** ([kamyrdol32](https://github.com/kamyrdol32))  | ![100%](https://progress-bar.dev/100)  | ![100%](https://progress-bar.dev/100)  |
 
 ## Installation
-`Comming soon`
+### Requirements
+  - **Docker & Docker Compose**
+  
+### Environment Variables
+You will need to add the following environment file on main directory:
+
+**.env.frontend**
+```bash
+VITE_I18NEXUS_API_KEY=""
+```
+
+### Instruction
+To deploy this project run project
+
+```bash
+docker-compose up
+```
 
 ## Technologies used:
   - **JavaScript**:
