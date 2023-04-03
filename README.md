@@ -14,9 +14,9 @@ This website is a personal portfolio showcasing the professional work and skills
   - **Docker & Docker Compose**
   
 ### Environment Variables
-You will need to add the following environment file on main directory:
+You will need to add the following environment file on frontend directory:
 
-**.env.frontend**
+**.env**
 ```bash
 VITE_I18NEXUS_API_KEY=""
 ```
