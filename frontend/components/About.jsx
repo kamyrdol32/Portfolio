@@ -28,7 +28,7 @@ export default function About() {
                     <img
                         src="./src/assets/about.svg"
                         alt="Kamil Zeglen"
-                        className="hidden w-7/12 md:block"
+                        className="hidden w-3/4 md:block"
                     />
                 </div>
             </div>
