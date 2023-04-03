@@ -24,7 +24,7 @@ export default function About() {
                         {t("about_description_3")}
                     </p>
                 </div>
-                <div className="p-3 flex items-center justify-center">
+                <div className="p-5 flex items-center justify-center">
                     <img
                         src="./src/assets/about.svg"
                         alt="Kamil Zeglen"
