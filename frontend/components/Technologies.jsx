@@ -85,12 +85,6 @@ export default function Technologies() {
             stars: 3,
             description: "technologies_nginx_desc",
         },
-        {
-            name: "Nginx",
-            icon: <SiNginx size={50}/>,
-            stars: 3,
-            description: "technologies_nginx_desc",
-        },
     ]
 
     return (
