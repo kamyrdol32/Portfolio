@@ -137,7 +137,7 @@ export default function Technologies() {
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[420px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[390px] border-accent pb-2">
 								{t("languages_title")}
 							</h2>
 							:
@@ -205,7 +205,7 @@ export default function Technologies() {
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[370px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[430px] border-accent pb-2">
 								{t("frameworks_frontend_title")}
 							</h2>
 							:
@@ -273,7 +273,7 @@ export default function Technologies() {
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[360px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[430px] border-accent pb-2">
 								{t("frameworks_backend_title")}
 							</h2>
 							:
