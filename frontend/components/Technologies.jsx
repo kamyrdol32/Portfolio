@@ -14,7 +14,9 @@ import {
 	SiAngular,
 	SiBootstrap,
 	SiGithub,
-	SiCypress
+	SiCypress,
+	SiHtml5,
+	SiTypescript
 } from "react-icons/si";
 import {useTranslation} from "react-i18next";
 
@@ -31,22 +33,34 @@ export default function Technologies() {
 			description: "technologies_python_desc",
 		},
 		{
+			name: "JavaScript",
+			icon: <SiJavascript size={50}/>,
+			stars: 4,
+			description: "technologies_js_desc",
+		},
+		{
+			name: "TypeScript",
+			icon: <SiTypescript size={50}/>,
+			stars: 3,
+			description: "technologies_typescript_desc",
+		},
+		{
 			name: "SQL / MySQL",
 			icon: <SiMysql size={50}/>,
 			stars: 3,
 			description: "technologies_sql_desc",
 		},
 		{
-			name: "JavaScript",
-			icon: <SiJavascript size={50}/>,
-			stars: 3,
-			description: "technologies_js_desc",
-		},
-		{
 			name: "CSS",
 			icon: <SiCss3 size={50}/>,
-			stars: 3,
+			stars: 4,
 			description: "technologies_css_desc",
+		},
+		{
+			name: "'HTML' *",
+			icon: <SiHtml5 size={50}/>,
+			stars: 4,
+			description: "technologies_html_desc",
 		},
 	]
 
@@ -125,9 +139,15 @@ export default function Technologies() {
 		},
 		{
 			name: "Cypress.io",
-			icon: <SiCypress  size={50}/>,
+			icon: <SiCypress size={50}/>,
 			stars: 2,
 			description: "technologies_cypress_desc",
+		},
+		{
+			name: "RxJS",
+			icon: <SiJavascript size={50}/>,
+			stars: 2,
+			description: "technologies_rxjs_desc",
 		},
 	]
 
