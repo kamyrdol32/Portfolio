@@ -133,15 +133,15 @@ export default function Technologies() {
 
 	return (
 		<div>
-			<section className="text-lg bg-primary text-white px-5 py-32" id="languages">
+			<section className="text-lg bg-primary text-white px-5 pt-32 pb-8" id="languages">
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[205px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[420px] border-accent pb-2">
 								{t("languages_title")}
 							</h2>
 							:
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[420px] border-accent pb-2">
 								{t("languages_title")}
 							</h2>
 						}
@@ -201,15 +201,15 @@ export default function Technologies() {
 				</div>
 			</section>
 
-			<section className="text-lg bg-primary text-white px-5 py-32" id="frameworks_frontend">
+			<section className="text-lg bg-primary text-white px-5 py-8" id="frameworks_frontend">
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[205px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[370px] border-accent pb-2">
 								{t("frameworks_frontend_title")}
 							</h2>
 							:
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[370px] border-accent pb-2">
 								{t("frameworks_frontend_title")}
 							</h2>
 						}
@@ -269,15 +269,15 @@ export default function Technologies() {
 				</div>
 			</section>
 
-			<section className="text-lg bg-primary text-white px-5 py-32" id="frameworks_backend">
+			<section className="text-lg bg-primary text-white px-5 py-8" id="frameworks_backend">
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[205px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[360px] border-accent pb-2">
 								{t("frameworks_backend_title")}
 							</h2>
 							:
-							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] border-accent pb-2">
+							<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[360px] border-accent pb-2">
 								{t("frameworks_backend_title")}
 							</h2>
 						}
@@ -337,7 +337,7 @@ export default function Technologies() {
 				</div>
 			</section>
 
-			<section className="text-lg bg-primary text-white px-5 py-32" id="technologies">
+			<section className="text-lg bg-primary text-white px-5 pt-8 pb-32" id="technologies">
 				<div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between p-3">
 					<div className="about-info mb-5">
 						{i18n.language === 'pl' ?
