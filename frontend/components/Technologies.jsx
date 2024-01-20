@@ -57,7 +57,7 @@ export default function Technologies() {
 			description: "technologies_css_desc",
 		},
 		{
-			name: "'HTML' *",
+			name: "'HTML'",
 			icon: <SiHtml5 size={50}/>,
 			stars: 4,
 			description: "technologies_html_desc",
