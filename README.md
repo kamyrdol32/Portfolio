@@ -5,10 +5,6 @@ This website is a personal portfolio showcasing the professional work and skills
 
 ## Authors
 
-| Author | Backend | Frontend |
-| :---: | :---: | :---: |
-| **Kamil Żegleń** ([kamyrdol32](https://github.com/kamyrdol32))  | ![100%](https://progress-bar.dev/100)  | ![100%](https://progress-bar.dev/100)  |
-
 ## Installation
 ### Requirements
   - **Docker & Docker Compose**
